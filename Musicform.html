@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Music Survey</title>
+<meta charset="utf-8">
+</head>
+<header>
+	<h1>Music Survey</h1>
+</header>
+<style>
+fieldset { width: 320px;
+		border: 2px ridge;
+		margin-botoom: 10px; }
+Legend { font-family: Georgia, "Times New Roman", serif;
+		font-weight: bold;
+		Font-size: .9em }
+</style>
+</head>
+<form method="get">
+<strong>
+Name: <br><input type="text" name="name" id="name"><br><br>
+E-mail: <br><input type="text" name="email" id="email"><br><br>
+</strong>
+<fieldset>
+<legend><h4>Select your favorite types of Music:</h4></legend>
+	<input type="checkbox" name="Pop" id="Pop" value="yes">Pop<br>
+	<input type="checkbox" name="Rock" id="Rock" value="yes">Rock<br>
+	<input type="checkbox" name="Rap" id="Rap" value="yes">Rap<br>
+	<input type="checkbox" name="Classical" id="Classical" value="yes">Classical<br>
+	<input type="checkbox" name="Folk" id="Folk" value="yes">Folk<br>
+	<input type="checkbox" name="Other" id="Other" value="yes">Other<br>
+</fieldset>
+<fieldset>
+<legend><h4>Select how often you purchase Music: </h4></legend>
+<input type="radio" name="Oft" id="Oft" value="O"> Often<br>
+<input type="radio" name="Occ" id="Occ" value="Oc"> Occasionally<br>
+<input type="radio" name="Nev" id="Nev" value="N"> Rarely/Never<br>
+</fieldset>
+	<br>
+<h4>Select the locations you listen to Music:</h4>
+<select size="3" name="Loc" id="Loc">
+	<option value="At Home">At home</option>
+	<option value="In the Car">In the car</option>
+	<option value="Anywhere">Anywhere</option>
+	<option value="At the gym">At the gym</option>
+</select><br>
+<br><h4>What role does music play in your life?</h4>
+<textarea name="Role" id="Role" rows="3" 
+cols="60"></textarea><br><br>
+<label for="myDate">Choose a Date</label>
+<input type="date" name=myDate id="myDate"><br><br>
+<input type="submit" value="Submit">
+<input type="reset">
+</form>
+<br>
+<footer>Sadie Heieren smheieren@mail.lipscomb.edu</footer>
